@@ -1,0 +1,27 @@
+GtHub APIを用いた開発＋プログラマの問題を解決するサービス
+
+実際にプログラマの問題を解決できそうか
+多くのプログラマが幸せになれそうか
+アイデアはよいか
+
+デモを見てくれる
+懇親会
+
+英語にするといい
+
+・これで自分のトークンを取得できる
+>||
+curl -u 'username' -d '{"scopes":["repo"],"note":"Help example"}'  https://api.github.com/authorizations
+||<
+
+認証しないと上限に達するので
+OAuth2でトークンをおくりつつやるっぽい
+>||
+curl -H "Authorization: token 自分のトークン" https://api.github.com
+||<
+
+https://github.com/michael/github
+
+・これが参考になった
+http://tetu1984.hateblo.jp/entry/2012/09/30/235233
+

@@ -1,0 +1,19 @@
+<html>
+<title>あ</title>
+<script type="text/javascript" src="github.js"></script> 
+<script type="text/javascript">
+
+var github = new Github({
+  username: "shinriyo",
+  password: "shin64931",
+  auth: "basic"
+});
+
+var user = github.getUser();
+//user.userRepos(username, function(err, repos) {});
+//user.following("shinriyo", function(){});
+user.following("shinriyo", function(){});
+//user.userRepos("shinriyo", function(){});
+
+</script>
+</html>

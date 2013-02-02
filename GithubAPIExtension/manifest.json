@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Git Hub API" ,
+    "description": "Git Hub API",
+    "version": "0.1",
+    "background": {
+        "scripts": ["background.js", "jquery-1.9.0.min.js"]
+    },
+    "permissions": [
+        "tabs", "http://*/*"
+    ],
+    "browser_action": {
+        "default_icon": "icon19.png",
+        "default_title": "Github API",
+        "default_popup": "popup.html"
+    }
+}
