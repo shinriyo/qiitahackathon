@@ -1,17 +1,32 @@
 {
     "manifest_version": 2,
+    "content_security_policy": "script-src 'self'; object-src 'self'",
     "name": "Git Hub API" ,
     "description": "Git Hub API",
     "version": "0.1",
     "background": {
-        "scripts": ["background.js", "jquery-1.9.0.min.js"]
+        "scripts": ["background.js"]
     },
     "permissions": [
-        "tabs", "http://*/*"
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_scripts": [
+    {
+      "matches": [ "http://*/*" ],
+      "js": [ "jquery-1.9.0.min.js", "jquery.xdomainajax.js", "content.js" ]
+    }
     ],
     "browser_action": {
         "default_icon": "icon19.png",
         "default_title": "Github API",
         "default_popup": "popup.html"
-    }
+    },
+    "web_accessible_resources": [
+        "image/chromix_error_icon.png",
+        "image/chromix_normal_icon.png",
+        "image/warning.png",
+        "image/secure.ico"
+    ]
 }

@@ -1,0 +1,32 @@
+<html>
+<title>あ</title>
+<script type="text/javascript" src="github.js"></script> 
+<script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+<script type="text/javascript">
+var token = '130a8ed7cbe137fea1ab4af61d8b6f081750af53';
+var url = "https://api.github.com/users/shinriyo/following?access_token=" + token;
+
+$.ajax({
+  url: url,
+  beforeSend: function(xhr) {
+    xhr.setRequestHeader("custom_header", "value");
+  },
+  success: function(data) {
+  }
+});
+
+/*
+var github = new Github({
+  username: "shinriyo",
+  password: "",
+  auth: "basic"
+});
+
+var user = github.getUser();
+//user.userRepos(username, function(err, repos) {});
+//user.following("shinriyo", function(){});
+user.following("shinriyo", function(){});
+//user.userRepos("shinriyo", function(){});
+*/
+</script>
+</html>

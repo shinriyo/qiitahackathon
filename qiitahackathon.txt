@@ -25,3 +25,5 @@ https://github.com/michael/github
 ・これが参考になった
 http://tetu1984.hateblo.jp/entry/2012/09/30/235233
 
+https://github.com/login/oauth/authorize?client_id=cd00dee9bd0f2d50ea8b&scope=user,public_repo
+
